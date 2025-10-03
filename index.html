@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Show, don't tell</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f8f6f3;
+      color: #333;
+    }
+    header {
+      background-color: #eae7e2;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3em;
+      color: #6b5e55;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      color: #4a3f38;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .bio {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .bio div {
+      flex: 1;
+      background-color: #fff;
+      padding: 20px;
+      border-left: 4px solid #c2b8ae;
+    }
+    .bio img {
+      width: 100%;
+      max-width: 250px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .services li, .manifesto li, .case-histories li {
+      margin-bottom: 10px;
+    }
+    .contact input, .contact textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .contact button {
+      padding: 10px 20px;
+      background-color: #6b5e55;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #eae7e2;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9em;
+    }
+    @media (max-width: 768px) {
+      .bio {
+        flex-direction: column;
+      }
+      header h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Show, don't tell</h1>
+    <p>Non raccontiamo storie. Le facciamo accadere.</p>
+  </header>
+
+  <section class="bio">
+    <h2>Chi siamo</h2>
+    <div>
+      <img src="francesca.jpg" alt="Francesca Silvia Loiacono" />
+      <strong>Francesca Silvia Loiacono</strong><br />
+      Scrittrice, storyteller, copywriter, editor.<br />
+      Le parole sono il suo strumento e il suo rifugio. Francesca costruisce architetture narrative che sanno emozionare, persuadere, trasformare.
+    </div>
+    <div>
+      <img src="flavia.jpg" alt="Flavia Imperi" />
+      <strong>Flavia Imperi</strong><br />
+      Scrittrice, ghost writer, curatrice editoriale.<br />
+      Flavia scrive per gli altri, ma non perde mai la propria voce. Cura testi come si curano le piante: con attenzione, pazienza, e una visione precisa.
+    </div>
+  </section>
+
+  <section class="services">
+    <h2>Cosa facciamo</h2>
+    <ul>
+      <li><strong>Editing narrativo</strong>: Smussiamo, affilamo, ascoltiamo.</li>
+      <li><strong>Writing coaching</strong>: Percorsi personalizzati per chi vuole scrivere con più consapevolezza.</li>
+      <li><strong>Ghost writing</strong>: Scriviamo per chi ha qualcosa da dire ma non sa come dirlo.</li>
+    </ul>
+  </section>
+
+  <section class="vision">
+    <h2>La nostra vision</h2>
+    <p>Scrivere è un atto di presenza. In questa sezione condividiamo pensieri sparsi, intuizioni, domande che ci accompagnano nel lavoro quotidiano. Non è un blog. È un diario aperto.</p>
+  </section>
+
+  <section class="case-histories">
+    <h2>Case Histories</h2>
+    <ul>
+      <li><strong>Una biografia che ha trovato la sua voce</strong>: trasformando frammenti sparsi in un racconto coerente.</li>
+      <li><strong>Un romanzo che non sapeva di essere tale</strong>: ora in fase di pubblicazione.</li>
+    </ul>
+  </section>
+
+  <section class="manifesto">
+    <h2>Manifesto</h2>
+    <ul>
+      <li>Scriviamo con cura, non con fretta.</li>
+      <li>Lavoriamo nell’ombra, ma non siamo invisibili.</li>
+      <li>L’editing è un atto d’amore.</li>
+      <li>La voce dell’autore è sacra.</li>
+      <li>Crediamo nella bellezza.</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h2>Contattaci</h2>
+    <p>Scrivici. Anche solo per raccontarci un dettaglio che ti ha emozionato.</p>
+    <form action="mailto:info@showdonttell.it" method="post" enctype="text/plain">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Messaggio:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <button type="submit">Invia</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Show, don't tell — Sito curato da Francesca Silvia Loiacono & Flavia Imperi
+  </footer>
+
+</body>
+</html>
+Aggiunta homepage
